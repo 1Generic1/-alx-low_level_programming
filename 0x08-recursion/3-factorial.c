@@ -15,10 +15,10 @@ int factorial(int n)
 		/* Return -1 to indicate an error for negative numbers */
 		return (-1);
 	}
-	else if 
+	else if (n == 0)
 	{
 		/* base case: factorial of 0 is 1 */
-		return(1);
+		return (1);
 	}
 	else
 	{
