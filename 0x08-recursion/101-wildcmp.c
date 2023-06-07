@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * wildcmp - compares two strings and returns 1 if they can be considered identical
+ * wildcmp - compares two strings and returns 1 if identical
  * @s1: the first string
  * @s2: the second string
  *
