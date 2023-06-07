@@ -22,8 +22,8 @@ int _strlen_recursion(char *s)
 
 	if (len <= 1)
 	{
-		/* this is the base case for the recursion */
-	/*	return (1);
+		 this is the base case for the recursion 
+		return (1);
 	}
 	if (*s != *(s + len - 1))
 		return (0);
