@@ -23,7 +23,7 @@ int factorial(int n)
 	else
 	{
 		/* Recursive case: multiply n with factorial of (n-1) */
-		return (n * factorial(n - 1);
+		return (n * factorial(n - 1));
 	}
 }
 		 
