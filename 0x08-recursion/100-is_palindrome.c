@@ -1,15 +1,12 @@
 #include "main.h"
 
 /**
- * is_palindrome - checks if a string is a palindrome
- * @s: the string to check
+ * _strlen_recursion - Calculates the length of a string using recursion.
+ * @s: The string.
  *
- * Return: 1 if the string is a palindrome, 0 otherwise
- *
- * _strlen_recursion - calculates the length of a string using recursion
- * @s: the string
- *
+ * Return: The length of the string.
  */
+
 
 int _strlen_recursion(char *s)
 {
