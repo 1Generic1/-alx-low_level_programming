@@ -5,9 +5,7 @@
  * @s: the string to check
  *
  * Return: 1 if the string is a palindrome, 0 otherwise
- */
-
-/**
+ *
  * _strlen_recursion - calculates the length of a string using recursion
  * @s: the string
  *
@@ -18,7 +16,6 @@ int _strlen_recursion(char *s)
 {
        	if (*s == '\0')
 		return (0);
-
 	return (1 + _strlen_recursion(s + 1));
 }
 /**
@@ -51,5 +48,5 @@ int is_palindrome(char *s)
 	if (len <= 1)
 	return (1);
 
-	return (is_palindrome_recursive(s, 0, len - 1));
+	return (is_palindrome_recursive(s, 0, len - 1)i);
 }
