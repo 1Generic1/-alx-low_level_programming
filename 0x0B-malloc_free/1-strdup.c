@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stddef.h>
 #include <stdlib.h>
-
+#include <string.h>
 char *_strdup(char *str)
 {
 	size_t lenght = strlen(str);
