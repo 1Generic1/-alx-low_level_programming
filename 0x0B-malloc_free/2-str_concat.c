@@ -1,6 +1,8 @@
 #include "main.h"
 #include <stddef.h>
 #include <stdlib.h>
+#include <string.h>
+
 
 char *str_concat(char *s1, char *s2)
 {
@@ -10,13 +12,13 @@ char *str_concat(char *s1, char *s2)
 
 	if (s1 == NULL)
 	{
-		" ";
+		"";
 	}
 	if (s2 == NULL)
 	{
-		" ";
+		"";
 	}
-	s1s2 = (char *)malloc((lenght1 + length2 + 1) * sizeof(char));
+	s1s2 = (char *)malloc((length1 + length2 + 1) * sizeof(char));
 		if (s1s2 == NULL)
 		{
 			return (NULL);
