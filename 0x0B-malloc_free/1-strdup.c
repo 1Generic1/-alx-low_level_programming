@@ -15,16 +15,17 @@ char *_strdup(char *str)
 {
 	size_t lenght = strlen(str);
 	char *duplicate;
-	
+	char *copied_duplicate;
+
 	if (str == NULL)
 	{
 		return (NULL);
 	}
-	duplicate = (char *) malloc(lenght + 1) * sizeof (char);
+	duplicate = (char *) malloc(lenght + 1) * sizeof(char);
 		if (duplicate == NULL)
 		{
 			return (NULL);
 		}
-	copied_duplicate = strcpy(duplicate, str);
-		return (copied_duplicate);
+	strcpy(duplicate, str);
+		return (duplicate);
 }
