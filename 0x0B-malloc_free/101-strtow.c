@@ -34,25 +34,30 @@ void free_words(char **words);
  */
 char **strtow(char *str)
 {
-        if (str == NULL || *str == '\0')
+        int word_count;
+	int word_index;
+	char **words;
+	int i;
+
+	if (str == NULL || *str == '\0')
         {
                 return NULL;
         }
 
-        int word_count = count_words(str);
+        word_count = count_words(str);
         if (word_count == 0)
         {
                 return NULL;
         }
 
-        char **words = (char **)malloc((word_count + 1) * sizeof(char *));
+        words = (char **)malloc((word_count + 1) * sizeof(char *));
         if (words == NULL)
         {
                 return NULL;
         }
 
-        int word_index = 0;
-        for (int i = 0; i < word_count; i++)
+        word_index = 0;
+        for (i = 0; i < word_count; i++)
         {
                 words[i] = extract_word(str, &word_index);
                 if (words[i] == NULL)
@@ -80,7 +85,6 @@ int count_words(char *str)
 
         while (i < length)
         {
-                // Skip leading spaces
                 while (i < length && str[i] == ' ')
                 {
                         i++;
@@ -90,7 +94,6 @@ int count_words(char *str)
                 {
                         count++;
 
-                        // Skip the word
                         while (i < length && str[i] != ' ')
                         {
                                 i++;
@@ -116,7 +119,6 @@ char *extract_word(char *str, int *index)
 	int word_length;
 	char *word;
 
-        // Skip leading spaces
         while (start < length && str[start] == ' ')
         {
                 start++;
@@ -129,7 +131,6 @@ char *extract_word(char *str, int *index)
 
         end = start;
 
-        // Find the end of the word
         while (end < length && str[end] != ' ')
         {
                 end++;
