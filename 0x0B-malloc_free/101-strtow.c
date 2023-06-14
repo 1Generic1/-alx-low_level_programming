@@ -98,7 +98,7 @@ int count_words(char *str)
                 }
         }
 
-        return count;
+        return (count);
 }
 
 /**
@@ -112,6 +112,9 @@ char *extract_word(char *str, int *index)
 {
         int length = strlen(str);
         int start = *index;
+	int end;
+	int word_length;
+	char *word;
 
         // Skip leading spaces
         while (start < length && str[start] == ' ')
@@ -121,10 +124,10 @@ char *extract_word(char *str, int *index)
 
         if (start >= length)
         {
-                return NULL;
+                return (NULL);
         }
 
-        int end = start;
+        end = start;
 
         // Find the end of the word
         while (end < length && str[end] != ' ')
@@ -134,17 +137,17 @@ char *extract_word(char *str, int *index)
 
         *index = end;
 
-        int word_length = end - start;
-        char *word = (char *)malloc((word_length + 1) * sizeof(char));
+        word_length = end - start;
+        word = (char *)malloc((word_length + 1) * sizeof(char));
         if (word == NULL)
         {
-                return NULL;
+                return (NULL);
         }
 
         strncpy(word, str + start, word_length);
         word[word_length] = '\0';
 
-        return word;
+        return (word);
 }
 
 /**
@@ -153,11 +156,14 @@ char *extract_word(char *str, int *index)
  */
 void free_words(char **words)
 {
-if (words == NULL) {
+
+	int i;
+
+	if (words == NULL) {
         return;
     }
     
-    for (int i = 0; words[i] != NULL; i++) {
+    for (i = 0; words[i] != NULL; i++) {
         free(words[i]);
     }
     
