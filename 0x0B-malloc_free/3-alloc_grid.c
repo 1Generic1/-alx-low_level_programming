@@ -24,7 +24,7 @@ int **alloc_grid(int width, int height)
 	{
 		return (NULL);
 	}
-	//allocate memory for the colums and initialize to 0
+	/* allocate memory for the colums and initialize to 0 */
 	for (i = 0; i < height; i++)
 	{
 		grid[i] = (int *)malloc(width * sizeof(int));
