@@ -48,5 +48,5 @@ char *argstostr(int ac, char **av)
 	k++;
 	}
 	str[k] = '\0'; /* Add null-terminating character at the end */
-	return str;
+	return (str);
 }
