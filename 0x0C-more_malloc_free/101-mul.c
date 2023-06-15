@@ -15,7 +15,7 @@ int is_valid_number(char *str)
 {
 	int i;
 
-	for (i = 0; str[i] != '/0'; i++)
+	for (i = 0; str[i] != '\0'; i++)
 	{
 		if (!isdigit(str[i]))
 		{
@@ -67,7 +67,7 @@ int main(int argc, char *argv[])
 	}
 	num1 = atoi(num1_str);
 	num2 = atoi(num2_str);
-	result = multiply_numbers(num1, um2);
+	result = multiply_numbers(num1, num2);
 	printf("%d\n", result);
 	return (0);
 }
