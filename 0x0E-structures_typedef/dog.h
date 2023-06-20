@@ -1,4 +1,5 @@
-#include "main.h"
+#ifndef DOG_H
+#define DOG_H
 
 /**
  * struct dog - structure containing description of a dog
@@ -14,3 +15,4 @@ struct dog
 	char *owner;
 };
 
+#endif /* DOG_H */
