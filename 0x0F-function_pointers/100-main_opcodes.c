@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-**
+/**
  * print_opcodes - Prints the opcodes of an array of bytes
  * @bytes: Pointer to the array of bytes
  * @num_bytes: Number of bytes to print
@@ -42,7 +42,7 @@ int main(int argc, char *argv[])
 		return (2);
 	}
 	main_opcodes = (char *)main;
-	print_ opcodes(main_opcodes, num_bytes);
+	print_opcodes(main_opcodes, num_bytes);
 	return (0);
 }
 
