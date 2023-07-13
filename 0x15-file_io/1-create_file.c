@@ -4,6 +4,7 @@
 #include <fcntl.h>
 #include <unistd.h>
 #include <sys/stat.h>
+#include "main.h"
 
 /**
  * create_file - Create a file with the specified name 
