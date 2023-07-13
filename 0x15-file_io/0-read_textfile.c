@@ -11,7 +11,7 @@
  * Return: The actual number of letters read and printed, or 0 on failure
  */
 
-Prototype: ssize_t read_textfile(const char *filename, size_t letters)
+ssize_t read_textfile(const char *filename, size_t letters __attribute__((unused)))
 {
 	int fd;
 	ssize_t bytes_read, bytes_written;
