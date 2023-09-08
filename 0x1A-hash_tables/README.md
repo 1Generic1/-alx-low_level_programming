@@ -134,9 +134,9 @@ Before you continue, please take a moment to think about it: how you would imple
 
 For this task, please:
 
-Read PHP Internals Book: HashTable 
-Use the same hash function 
-Use these data structures:
+Read PHP Internals Book: HashTable <br> 
+Use the same hash function <br>
+Use these data structures: <br>
 
 	/**
 	 * struct shash_node_s - Node of a sorted hash table
