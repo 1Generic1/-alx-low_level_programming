@@ -2,11 +2,11 @@
 
 ## Resources
 
-https://www.youtube.com/watch?v=MfhjkfocRR0\n
-https://intranet.alxswe.com/projects/253\n
-https://en.wikipedia.org/wiki/Hash_function\n
-https://www.digitalocean.com/community/tutorials/hash-table-in-c-plus-plus
-https://stackoverflow.com/questions/31930046/what-is-a-hash-table-and-how-do-you-make-it-in-c
+https://www.youtube.com/watch?v=MfhjkfocRR0<br>
+https://intranet.alxswe.com/projects/253<br>
+https://en.wikipedia.org/wiki/Hash_function<br>
+https://www.digitalocean.com/community/tutorials/hash-table-in-c-plus-plus <br>
+https://stackoverflow.com/questions/31930046/what-is-a-hash-table-and-how-do-you-make-it-in-c <br>
 
 ## Requirements
 ## General
@@ -134,8 +134,8 @@ Before you continue, please take a moment to think about it: how you would imple
 
 For this task, please:
 
-Read PHP Internals Book: HashTable
-Use the same hash function
+Read PHP Internals Book: HashTable 
+Use the same hash function 
 Use these data structures:
 
 	/**
