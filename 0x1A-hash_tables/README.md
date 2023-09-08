@@ -2,11 +2,11 @@
 
 ## Resources
 
-https://www.youtube.com/watch?v=MfhjkfocRR0
-https://intranet.alxswe.com/projects/253
-https://en.wikipedia.org/wiki/Hash_function
-https://www.digitalocean.com/community/tutorials/hash-table-in-c-plus-plus
-https://stackoverflow.com/questions/31930046/what-is-a-hash-table-and-how-do-you-make-it-in-c
+\nhttps://www.youtube.com/watch?v=MfhjkfocRR0
+\nhttps://intranet.alxswe.com/projects/253
+\nhttps://en.wikipedia.org/wiki/Hash_function
+\nhttps://www.digitalocean.com/community/tutorials/hash-table-in-c-plus-plus
+\nhttps://stackoverflow.com/questions/31930046/what-is-a-hash-table-and-how-do-you-make-it-in-c
 
 ## Requirements
 ## General
