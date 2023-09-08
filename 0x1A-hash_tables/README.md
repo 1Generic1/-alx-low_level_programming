@@ -138,7 +138,7 @@ For this task, please:
 - Use the same hash function
 - Use these data structures:
 
-		/**
+	/**
 	 * struct shash_node_s - Node of a sorted hash table
 	 *
 	 * @key: The key, string
