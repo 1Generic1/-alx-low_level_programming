@@ -11,6 +11,7 @@ void hash_table_print(const hash_table_t *ht)
 	int flag = 0; /* Flag to control printing of commas */
 
 	if (ht == NULL)
+	printf("{}\n");
 	printf("{");
 	for (i = 0; i < ht->size; i++)
 	{
