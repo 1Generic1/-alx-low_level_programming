@@ -115,7 +115,7 @@ You are not allowed to have a list of all the .o files
 
 ## 100-Makefile
 
-	Requirements:
+Requirements:
 
 	name of the executable: school
 	rules: all, clean, fclean, oclean, re
