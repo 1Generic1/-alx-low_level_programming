@@ -9,6 +9,13 @@ make-official documentation <br>https://www.gnu.org/software/make/manual/html_no
 ##FIles
 in the following tasks, the files in the link will be used for the compililation <br>https://github.com/alx-tools/0x1B.c<br>
 
+## HOW TO RUN CODE FOR MAKE FILES:
+
+FOR EXAMPLE TASK 0
+	julien@ubuntu:~/0x1C. Makefiles$ make -f 0-Makefile 
+	gcc main.c school.c -o school
+	julien@ubuntu:~/0x1C. Makefiles$ ./school 
+
 
 ## Tasks
 
