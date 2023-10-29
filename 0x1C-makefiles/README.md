@@ -97,8 +97,7 @@ You are not allowed to have a list of all the .o files
 
 ## vim 5-island_perimeter.py
 
-	Create a function def island_perimeter(grid): that returns the perimeter of the island described in grid:
-
+Create a function def island_perimeter(grid): that returns the perimeter of the island described in grid:
 	grid is a list of list of integers:
 		0 represents a water zone
 		1 represents a land zone
@@ -108,7 +107,7 @@ You are not allowed to have a list of all the .o files
 	Grid is completely surrounded by water, and there is one island (or nothing).
 	The island doesn’t have “lakes” (water inside that isn’t connected to the water around the island).
 	Requirements:
-
+		
 		First line contains #!/usr/bin/python3
 		You are not allowed to import any module
 		Module and function must be documented
