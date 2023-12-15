@@ -13,7 +13,7 @@
  */
 int advanced_binary(int *array, size_t size, int value)
 {
-	size_t i;
+	size_t i, mid;
 	int result;
 
 	if (array == NULL || size == 0)
@@ -27,22 +27,20 @@ int advanced_binary(int *array, size_t size, int value)
 	}
 	printf("\n");
 	/* calculate the midpoint */
-	i = size / 2;
-	if (array[i] == value)
+	mid = (size - 1) / 2;
+	if (array[mid] == value)
 	{
-		if (i > 0 && array[i - 1] == value)
-			return (advanced_binary(array, i + 1, value));
-		return (i);
+		if (mid > 0 && array[mid - 1] == value)
+			return (advanced_binary(array, mid + 1, value));
+		return (mid);
 	}
-	else if (array[i] < value)
+	else if (array[mid] < value)
 	{
-		if (i < size - 1)
-			i++;
-		result = advanced_binary(array + i, size - i, value);
-		return ((result == -1) ? -1 : (int)(i + result));
+		result = advanced_binary(array + mid + 1, size - mid - 1, value);
+		return ((result == -1) ? -1 : (int)(mid + 1 + result));
 	}
 	else
 	{
-		return (advanced_binary(array, i, value));
+		return (advanced_binary(array, mid, value));
 	}
 }
